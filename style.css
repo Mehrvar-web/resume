@@ -254,6 +254,10 @@ textarea:hover {
         display: block;
         text-align: center;
     }
+    .info .info-text h1{
+        font-family: 'Beau Rivage', cursive;
+    }
+   
     .info .info-text p {
         color: rgb(218, 218, 218);
         text-align: justify;
