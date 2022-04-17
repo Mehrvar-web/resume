@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Clicker+Script&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #1c2331;
+    background: #7e7e7e;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.avatar {
+    width: 200px;
+    height: 220px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 25px rgb(214, 160, 121);
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: .8;
+    color: #686868;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:active {
+    color: rgb(0, 110, 255);
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text h1 {
+    font-family: 'Beau Rivage', cursive;
+}
+
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+    color: #ededee;
+    margin-bottom: 5px;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 22px;
+}
+
+.info-text p:last-child {
+    color: #15424d;
+    text-align: left;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.bg-yellow {
+    background: #ece9d8;
+}
+
+.bg-red {
+    background: #e6d3d3;
+}
+
+.bg-green {
+    background: #ceebd0;
+}
+
+.btn {
+    margin-top: 10px;
+    background: #111;
+    padding: 12px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+    transform: scale(1);
+}
+
+.btn:hover {
+    background: #15424d;
+    transform: scale(1.05);
+    color: #000;
+}
+
+.btn:active {
+    background: rgb(26, 38, 54);
+    color: green;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #7d7f83;
+    margin-bottom: 10px;
+}
+
+.table thead th {
+    text-align: left;
+    background: rgb(228, 205, 205);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #86897f;
+}
+
+.about {
+    word-spacing: 80px;
+    line-height: 35px;
+    list-style: none;
+    padding: 20px;
+}
+
+
+/* -- Form -- */
+
+.form h2 {
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    margin-right: 20px;
+    width: 50%;
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #111111;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: inherit;
+    border-bottom: 1px solid #15424d;
+    color: #000;
+    padding: 15px 5px 10px;
+    outline: none;
+    font-family: inherit;
+    transition: all .3s ease-in-out;
+    margin-top: 5px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #15424d;
+}
+
+input:hover,
+textarea:hover {
+    color: #15424d;
+    background: #929292;
+    border: 1px solid #15424d;
+}
+
+.social {
+    background: #15424d;
+    border-top-left-radius: 80%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.social h3 {
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+    color: #fff;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media p img {
+    display: flex;
+    max-width: 40px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    font-family: inherit;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+@media (max-width: 730px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+    .info .info-text p {
+        color: rgb(218, 218, 218);
+        text-align: justify;
+        font-size: 13px;
+    }
+    .info .info-text p:last-child {
+        color: #15424d;
+        text-align: left;
+    }
+    .form-row {
+        display: block;
+    }
+    .form-row .form-group {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .about {
+        word-spacing: 20px;
+        line-height: 35px;
+        list-style: none;
+        padding: 20px;
+        font-size: 15px;
+    }
+}
