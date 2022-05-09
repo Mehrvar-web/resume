@@ -2,155 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="mehrvar, cv, resume">
-    <meta name="descpription" content="Это сайт - резюме Мехрвара Шодиева">
-    <title>Mehrvar Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Mehrvar-Resume</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/m1.jpg" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Clicker+Script&family=East+Sea+Dokdo&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Clicker+Script&family=East+Sea+Dokdo&family=Lobster&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <style>
+        #logospan {
+            background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #7DB4E0), color-stop(0.15, #438db8), color-stop(0.3, rgb(54, 121, 167)), color-stop(0.45, rgb(29, 116, 138)), color-stop(0.6, rgb(33, 184, 161)), color-stop(0.75, rgb(49, 134, 155)), color-stop(0.9, #7DB4E0), color-stop(1, rgb(223, 223, 223)));
+            background-image: gradient( linear, left top, right top, color-stop(0, #7DB4E0), color-stop(0.15, #3c7494), color-stop(0.3, #38779c), color-stop(0.45, rgb(60, 156, 180)), color-stop(0.6, #2ff), color-stop(0.75, rgb(83, 160, 165)), color-stop(0.9, rgb(59, 132, 150)), color-stop(1, rgb(231, 231, 231)));
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            letter-spacing: 3px;
+            font-family: 'Beau Rivage', cursive;
+            font-family: 'Clicker Script', cursive;
+            font-family: 'East Sea Dokdo', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-weight: bold;
+        }
+        
+        #nameme {
+            font-size: 60px;
+            letter-spacing: 5px;
+            font-family: 'Beau Rivage', cursive;
+            font-family: 'Clicker Script', cursive;
+            font-family: 'East Sea Dokdo', cursive;
+            font-family: 'Lobster', cursive;
+        }
+        
+        #developer {
+            font-size: 40px;
+        }
+        
+        @media screen and (max-width: 325px) {
+            #cv {
+                display: flex;
+                flex-direction: column;
+                margin: auto 40px;
+            }
+        }
+        
+        @media screen and (max-width: 510px) {
+            #nameme {
+                font-size: 35px;
+            }
+            #developer {
+                font-size: 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <div class="bkd"></div> -->
-    <div class="container">
+    <!-- Start your project here-->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000A14; color:">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="/">
+                <img src="img/mnew.jpg" height="30" width="40" alt=" Mehrvar " loading="lazy "margin-top: -1px; margin-right: 0;" />
+                <span id="logospan" class="fs-2">ehrvar</span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            </a>
 
-        <div class="info">
-            <img src="images/mekha4.jpg" alt="Mehrvar" class="avatar">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
 
-            <div class="info-text">
-                <h1>Мехрвар Шодиев</h1>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active mx-3" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white mx-3" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link text-white mx-3" href="#">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white mx-3" href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
 
-                <p>Я Мехрвар из Таджикистана. Я студент и в настоящее время я учусь в университете. Меня очень интересует программирование и я хочу изучать его и работать в этой области.</p>
 
-                <p>Я люблю<em> программировать, плавать и путешествовать !</em></p>
+                <ul class="navbar-nav d-flex flex-row">&ensp;&ensp;
+                    <!-- Icons -->
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-telegram text-info "></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-whatsapp text-success"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-facebook text-white"></i>
+                        </a>
+                    </li>&nbsp;&nbsp;
+                    <li class="nav-item me-3 me-lg-0">
+                        <strong class="nav-link text-white" id="phoneNum">
+                            | &nbsp;&nbsp; +992-111-220-032
+                        </strong>
+                    </li>
+
+                </ul>
 
             </div>
-
+            <!-- Collapsible wrapper -->
         </div>
-
-        <div class="card bg-green">
-
-            <h2>Мои хобби</h2>
-
-            <ol class="list">
-                <li>Интернет</li>
-                <li>Тир</li>
-                <li>Занятия спортом</li>
-                <li>Чтение</li>
-            </ol>
-
-        </div>
-
-
-        <div class="card bg-red">
-
-            <h2>Опыт работы</h2>
-
-            <table class="table">
-
-                <thead>
-                    <tr>
-                        <th>Название</th>
-                        <th>Должность</th>
-                        <th>Год</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>LPTracker</td>
-                        <td>Frontend</td>
-                        <td>2016-17</td>
-                    </tr>
-
-                    <tr>
-                        <td>EPAM</td>
-                        <td>Sofwarwe Engineer</td>
-                        <td>2017-18</td>
-                    </tr>
-
-                    <tr>
-                        <td>Sowtware services</td>
-                        <td>Senior Feontend</td>
-                        <td>2018-19</td>
-                    </tr>
-
-                    <tr>
-                        <td>Data Base</td>
-                        <td>Backend</td>
-                        <td>2019-20</td>
-                    </tr>
-
-                    <tr>
-                        <td>Math Works</td>
-                        <td>Researcher</td>
-                        <td>2020-21</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-
-        <div class="card bg-yellow">
-            <h2>Обо Мне</h2>
-
-            <ul class="about">
-                <li><strong>Имя:</strong> <em>Мехрвар</em></li>
-                <li><strong>Возраст:</strong> <em>20</em></li>
-                <li><strong>Страна:</strong> <em>Таджикистан</em></li>
-                <li><strong>Телефон:</strong> <em>+992-111-220-032</em></li>
-                <li><strong>E-mail:</strong> <em>mehrvarshodiev2406@mail.ru</em></li>
-            </ul>
-        </div>
-
-        <form action="/" class="form">
-
-            <h2>Связаться со мной</h2>
-
-            <div class="form-row">
-
-                <div class="form-group">
-                    <label for="name">Ваше имя: </label>
-                    <input type="text" name="name" id="name" placeholder="Введите имя">
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <!-- Background image -->
+    <div class="p-5 text-center bg-image" style="background-image: url('/img/myresume.jpg'); height: 500px; background-size: cover; background-position: center;">
+        <div class="mask" style="background-color: rgba(17, 17, 17, 0.274);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                    <h1 id="nameme" class="mb-3 text-primary">Mehrvar Shodiev</h1>
+                    <h4 id="developer" class="mb-3 text-warning">Web Developer</h4><br>
+                    <a id="cv" class="btn btn-outline-light btn-lg" href="#!" role="button">Download CV</a>&ensp;
+                    <a id="cv" class="btn btn-outline-light btn-lg" href="#!" role="button">Download CV</a>
                 </div>
-
-                <div class="form-group">
-                    <label for="email">Ваше email: </label>
-                    <input type="email" name="email" id="email" placeholder="Введите email">
-                </div>
-
             </div>
-
-            <div class="form-group">
-                <label for="message">Ваше сообщение: </label>
-                <textarea name="message" id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
-            </div>
-
-            <input type="submit" class="btn" value="Отправить">
-        </form>
-        <div class=" card social ">
-            <h3>Я в социальных сетей</h3>
-
-            <div class=" social-media">
-
-                <p>
-                    <a href="https://www.twitter.com/shod1ev_" title="twitter" target="_blank"><img src="images/twitter_icon2.png" alt="Twitter"></a>
-                </p>
-                <p>
-                    <a href="https://www.facebook.com/mehrvarshodiev" title="facebook" target="_blank"><img src="images/facebook_icon2.png" alt="Facebook"></a>
-                </p>
-                <p>
-                    <a href="https://www.t.me/mehrvar_02" title="telegram" target="_blank"><img src="images/telegram_icon2.png" alt="Telegram"></a>
-                </p>
-            </div>
-
-            <div class="footer">
-                <p class="footer"> &Cdot;opyright &copy2022 &rAarr; &laquo;Mehrvar&raquo;</p>
-            </div>
-
         </div>
-
     </div>
+    <!-- Background image -->
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type=" text/javascript " src="js/mdb.min.js "></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript "></script>
 </body>
 
 </html>
