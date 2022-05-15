@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Mehrvar-Resume</title>
+    <titl>Resume of Mehrvar</titl>
+    </title>
     <!-- MDB icon -->
     <link rel="icon" href="img/m1.jpg" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -45,7 +46,12 @@
         }
         
         #developer {
-            font-size: 40px;
+            font-size: 50px;
+            letter-spacing: 2px;
+        }
+        
+        #developer span {
+            color: rgb(230, 44, 44);
         }
         
         @media screen and (max-width: 325px) {
@@ -61,7 +67,7 @@
                 font-size: 35px;
             }
             #developer {
-                font-size: 25px;
+                font-size: 30px;
             }
         }
     </style>
@@ -69,13 +75,13 @@
 
 <body>
     <!-- Start your project here-->
-    <header>
+    <header id="home">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000A14;">
             <!-- Container wrapper -->
             <div class="container">
                 <!-- Navbar brand -->
-                <a class="navbar-brand me-2" href="../index.html">
+                <a class="navbar-brand me-2" href="/">
                     <img src="img/mnew.jpg" height="30" width="40" alt=" Mehrvar " loading="lazy" style="margin-top: -1px; margin-right: 0;" />
                     <span id="logospan" class="fs-2">ehrvar</span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                 </a>
@@ -87,7 +93,7 @@
                     <!-- Left links -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-white mx-3" href="/">Home</a>
+                            <a class="nav-link text-white mx-3" href="index.html">Home</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link text-white mx-3" href="#features">Features</a>
@@ -106,7 +112,7 @@
                     <ul class="navbar-nav d-flex flex-row">&ensp;&ensp;
                         <!-- Icons -->
                         <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="https://t.me/mehrvar_02" target="_blank" title="Telegram">
+                            <a class="nav-link" href="https://www.t.me/mehrvar_02" target="_blank" title="Telegram">
                                 <i class="fab fa-telegram text-info "></i>
                             </a>
                         </li>
@@ -139,10 +145,10 @@
             <div class="mask" style="background-color: rgba(15, 15, 15, 0.671);">
                 <div class="d-flex justify-content-center align-items-center h-100">
                     <div class="text-white">
-                        <h1 id="nameme" class="mb-3 text-primary ">Mehrvar Shodiev</h1>
-                        <h4 id="developer" class="mb-3 text-warning ">Web Developer</h4><br>
+                        <h1 id="nameme" class="mb-3 text-info note">Mehrvar Shodiev</h1>
+                        <h4 id="developer" class="mb-3 text-white ">I'm a <span class="auto-type"></span></h4><br>
                         <a id="cv" class="btn btn-outline-danger text-danger btn-lg" href="#!" role="button ">Download CV</a>&ensp;
-                        <a id="cv" class="btn btn-outline-light btn-lg" href="#!" role="button">My skills</a>
+                        <a id="cv" class="btn btn-outline-light btn-lg" href="#about" role="button">My skills</a>
                     </div>
                 </div>
             </div>
@@ -186,7 +192,7 @@
                     <div class="col-md-6 mb-4">
                         <img src="img/myLogo.png" width="250px" height="250px" alt="Mehrvars Avatar" class="rounded-circle shadow-3-strong mb-4">
                         <p class="fs-5 text-light"><strong>Who's this guy?</strong></p>
-                        <p class="text-white" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat quaerat incidunt quam facilis ratione, aliquid officiis.</p>
+                        <p class="text-white" style="text-align: justify;">Hello. My name is Mehrvar and I'm learning programming. Now, I learned how to make websites with HTML, CSS and JavaScript. And I want to learn more about it!</p>
                         <!-- Facebook -->
                         <a class="btn btn-primary btn btn-floating m-1" style="background-color: #3b5998;" target="_blank" href="https://facebook.com/mehrvar.shodiev" role="button">
                             <i class="fab fa-facebook-f fa-xl"></i>
@@ -298,23 +304,23 @@
                 <h3 class="text-light mb-5 mt-2"><strong>Contact me</strong></h3>
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-md-8">
-                        <form>
+                        <form onsubmit="sendEmail(); reset(); return false">
                             <!-- Name input -->
                             <div class="form-outline mb-4">
-                                <input type="text" id="form4Example1" class="form-control text-white" />
-                                <label class="form-label text-white" for="form4Example1">Name</label>
+                                <input type="text" id="name" class="form-control text-white" />
+                                <label class="form-label text-white" for="name">Name</label>
                             </div>
 
                             <!-- Email input -->
                             <div class="form-outline mb-4">
-                                <input type="email" id="form4Example2" class="form-control text-white" />
-                                <label class="form-label text-white" for="form4Example2">Email address</label>
+                                <input type="email" id="email" class="form-control text-white" />
+                                <label class="form-label text-white" for="email">Email address</label>
                             </div>
 
                             <!-- Message input -->
                             <div class="form-outline mb-4">
-                                <textarea class="form-control text-white" id="form4Example3" rows="4"></textarea>
-                                <label class="form-label text-white" for="form4Example3">Message</label>
+                                <textarea class="form-control text-white" id="message" rows="4"></textarea>
+                                <label class="form-label text-white" for="message">Message</label>
                             </div>
                             <!-- Submit button -->
                             <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
@@ -343,8 +349,32 @@
 
     <!-- MDB -->
     <script type=" text/javascript " src="js/mdb.min.js "></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript "></script>
+    <!-- Text typed scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Coding", "Student", "Web developer", ],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+        })
+    </script>
+    <!-- SMTP JS - Send form to Email with JS-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken: "3f880daf-52fe-4f81-a635-f7d0d2687823",
+                To: 'mehrvarshodiev2406@mail.ru',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enguiry",
+                Body: "Name: " + document.getElementById("name").value + "<br>Email: " + document.getElementById("email").value + "<br>Message: " + document.getElementById("message").value
+            }).then(
+                message => alert("Message sent successfully")
+            );
+        }
+    </script>
+
 </body>
 
 </html>
